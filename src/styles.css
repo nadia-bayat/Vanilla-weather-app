@@ -26,6 +26,8 @@ li {
   color: #4d5154;
   margin: 0;
   padding: 0;
+}
+li::first-letter {
   text-transform: capitalize;
 }
 .weather-temperature img {
