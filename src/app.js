@@ -39,5 +39,6 @@ function displayTemperature(response) {
   dateTime.innerHTML = `${month} ${date}, ${hour}:${minute}`;
 }
 let apiKey = "c651b570409fd5da2a6ffe01cfd48b43";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=Rome&appid=${apiKey}&units=metric`;
+let city = "Rome";
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
