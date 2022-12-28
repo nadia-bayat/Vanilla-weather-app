@@ -58,3 +58,21 @@ function handleSubmit(event) {
 search("Rome");
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+let farenheitLink = document.querySelector("#fLink");
+let celciusLink = document.querySelector("#cLink");
+
+farenheitLink.addEventListener("click", showFTemperature);
+function showFTemperature(event) {
+  event.preventDefault();
+  let temp = document.querySelector("#temperature");
+  let fTemp = (12 * 9) / 5 + 32;
+  temp.innerHTML = Math.round(fTemp);
+}
+celciusLink.addEventListener("click", showCTemperature);
+function showCTemperature(event) {
+  event.preventDefault();
+  let temp = document.querySelector("#temperature");
+  let cTemp = ((53.6 - 32) * 5) / 9;
+  temp.innerHTML = Math.round(cTemp);
+}
