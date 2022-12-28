@@ -21,6 +21,27 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form" class="mb-4">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  id="search-city"
+                  type="search"
+                  placeholder="Type a city..."
+                  autofocus="on"
+                  autocomplete="off"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
           <h1 id="city"></h1>
           <ul>
             <li id="dateTime">December 28, 12:26</li>

@@ -44,7 +44,17 @@ function displayTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
-let apiKey = "c651b570409fd5da2a6ffe01cfd48b43";
-let city = "Rome";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
+function search(city) {
+  let apiKey = "c651b570409fd5da2a6ffe01cfd48b43";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(displayTemperature);
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+  let city = document.querySelector("#search-city").value;
+  search(city);
+}
+search("Rome");
+let form = document.querySelector("#search-form");
+form.addEventListener("submit", handleSubmit);
