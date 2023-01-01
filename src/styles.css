@@ -43,3 +43,14 @@ li::first-letter {
   font-size: 14px;
   top: -16px;
 }
+.weather-forecast {
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: #4d5154;
+}
+.weather-forecast-temperatures {
+  font-size: 15px;
+  color: #4d5154;
+}
