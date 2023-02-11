@@ -15,7 +15,7 @@ body {
   background-color: #ffff;
 }
 h1 {
-  color: #ffff;
+  color: #26292b;
   line-height: 28px;
   font-size: 30px;
   font-weight: 100;
@@ -23,7 +23,7 @@ h1 {
 ul {
   margin: 0;
   padding: 0;
-  color: #ffff;
+  color: #26292b;
 }
 li {
   font-size: 16px;
@@ -35,11 +35,11 @@ li::first-letter {
   text-transform: capitalize;
 }
 #temperature {
-  color: black;
+  color: #26292b;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #26292b;
 }
 .weather-app {
   margin-top: 100px;
